@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>task-8</title>
+</head>
+<body>
+    <h1>Дано масив номерів авто. Сформувати новий масив тих, які починаються на «А».</h1>
+
+    <script>
+
+        //1.Вводимо даннi
+        let userArray = ['АН4323ВН', 'ВА4422ВР', 'АХ2233ЕН', 'ВС1122ВР']
+        document.write(`<h2>Befor: ${userArray} </h2>`)
+
+        //2.Знаходимо результат
+        let minArray = []
+        for(let element of userArray) {
+            if (element[0] === 'А') minArray.push(element)
+        }
+
+        //3.Виводимо результат
+        document.write(`<h2>After: ${minArray} </h2>`)
+
+    </script>
+
+</body>
+</html>

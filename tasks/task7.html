@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-7</title>
+</head>
+<body>
+    <h1>Дано масив цін. Змінити цей масив так, що на ціни товарів, які більші за 1000 грн. дати 30% знижки.</h1>
+
+    <script>
+
+        // 1. Вводимо дані
+        let userArray = [1000, 2000, 300, 10000]
+        document.write(`<h2>Befor: ${userArray} </h2>`)
+
+        // 2. Знаходимо результат
+        for (let i = 0; i < userArray.length; i++) {
+            if (userArray[i] > 1000) {
+                userArray[i] = (userArray[i] - userArray[i] * 0.3).toFixed(2)
+            }
+        }
+
+        //3.Виводимо результат
+        document.write(`<h2>After: ${userArray} </h2>`)
+
+    </script>
+</body>
+</html>

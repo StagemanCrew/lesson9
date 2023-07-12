@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-1</title>
+</head>
+<body>
+    <h1>Користувач вводить кількість елементів. Створити масив, що складається з вказаної кількості елементів заповнених нулями.</h1>
+
+    <script>
+
+        //1. Вводимо даннi
+        let userCount = parseInt(prompt('Введіть кількість елементів.'))
+        //2. Знаходимо результат
+        let countArray = new Array(userCount).fill(0)
+        //3. Виводимо результат
+        document.write(`<h2>${countArray}</h2>`)
+
+    </script>
+</body>
+</html>

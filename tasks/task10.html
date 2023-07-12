@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-10</title>
+</head>
+<body>
+    <h1>Дано масив цін у грн. Податок складає 20%. Сформувати масив, який буде містити величину сплаченого податку у грн.</a>
+    </li></h1>
+
+    <script>
+
+        // Вводимо дані
+        let userArray = [1500, 2000, 3000, 10000]
+        document.write(`<h2>Befor: ${userArray} </h2>`)
+
+        // Знаходимо результат
+        let taxArray = []
+        for(let element of userArray) {
+            element = (element - element * 0.8).toFixed(2)
+            taxArray.push(element + 'грн.')
+        }
+
+        // Виводимо результат
+        document.write(`<h2>After: ${taxArray} </h2>`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-6</title>
+</head>
+<body>
+    <h1>Дано масив елементів. Усі елементи, які більші за перший елемент помножити на 2.</h1>
+
+    <script>
+
+        // 1. Вводимо дані
+        let userArray = [1, 2, 3, 4, 0, -3, -2, -1]
+        document.write(`<h2>Befor: ${userArray} </h2>`)
+
+        // 2. Знаходимо результат
+        for (let i = 0; i < userArray.length; i++) {
+            if (userArray[i] > userArray[0]) {
+                userArray[i] *= 2
+            }
+        }
+
+        //3.Виводимо результат
+        document.write(`<h2>After: ${userArray} </h2>`)
+
+    </script>
+</body>
+</html>

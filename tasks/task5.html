@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-5</title>
+</head>
+<body>
+    <h1>Дано масив елементів. Знайти добуток додатних елементів.</h1>
+
+    <script>
+
+        // 1. Вводимо дані
+        let userArray = [1, 2, 3, 4, -3, -2, -1]
+    
+        // 2. Знаходимо результат
+        let multArr = userArray[0]
+        for (let i = 0; i < userArray.length; i++) {
+            if (userArray[i] > 0)
+                multArr *= userArray[i]
+        }
+
+        //3.Виводимо результат
+        document.write(`<h2> ${multArr} </h2>`)
+
+    </script>
+</body>
+</html>

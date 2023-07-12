@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-3</title>
+</head>
+<body>
+    <h1>Користувач вводить кількість елементів. Створити масив, у якому перші 5 елементів заповнені 1-цями, а інші до кінця масиву заповнені 7-ками.</h1>
+
+    <script>
+
+        //1. Вводимо даннi
+        let userCount = parseInt(prompt('Введіть кількість елементів.'))
+        //2. Знаходимо результат
+        let countArray = new Array(userCount).fill(1).fill(7, 5);
+            //countArray.fill(7, 5);
+        //3. Виводимо результат
+        document.write(`<h2>${countArray}</h2>`)
+
+        // // Вводимо дані
+        // let userCount = parseInt(prompt('Введіть кількість(не меньше 5-ти) елементів.'));
+        // // Створюємо масив з першими 5 елементами, заповненими 1-цями
+        // let firstHalf = new Array(5).fill(1);
+        // // Створюємо масив з рештою елементів, заповненими 7-ками
+        // let secondHalf = new Array(userCount - 5).fill(7);
+        // // Об'єднуємо два масиви
+        // //let countArray = firstHalf.concat(secondHalf);
+        // let countArray = [...firstHalf, ...secondHalf];
+        // // Виводимо результат
+        // document.write(`<h2>${countArray}</h2>`);
+
+
+    </script>
+</body>
+</html>
