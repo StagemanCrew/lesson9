@@ -11,11 +11,12 @@
     <script>
 
         // 1. Вводимо дані
-        let userArray = [100, 200, 300, 50, 45, 30, 80, 230]
+        let userArray = [100, 200, 300, 45, 30, 230]
+        document.write(`<h2>Befor: ${userArray} </h2>`)
     
         // 2. Знаходимо результат
         for (let item of userArray) {
-            if (item >= 100)
+            if (item > 100)
             document.write(`<h2> ${item} </h2>`)
         }
 
